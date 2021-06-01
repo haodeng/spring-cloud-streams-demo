@@ -15,5 +15,10 @@
     docker exec -it spring-cloud-stream-demo_kafka_1 kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic hello-stream --from-beginning
 
 # Demo
+## Stream by kafka binder
 * Start publisher
 * Start consumer
+
+## Stream by kafka stream binder
+* Start kafka-stream-publisher
+* Start kafka-stream-consumer

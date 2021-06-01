@@ -1,0 +1,19 @@
+server:
+  port: 9100
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: supplier
+      bindings:
+        supplier-out-0:
+          destination: hello-stream
+          producer:
+            use-native-encoding: true
+      kafka:
+        bindings:
+          supplier-out-0:
+            producer:
+              configuration:
+                value.serializer: org.apache.kafka.common.serialization.StringSerializer

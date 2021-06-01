@@ -8,9 +8,18 @@
     <name>spring-cloud-streams-demo</name>
     <description>Spring Cloud Stream Kafka examples</description>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.0</version>
+        <relativePath/>
+    </parent>
+
     <modules>
         <module>publisher</module>
         <module>consumer</module>
+        <module>kafka-stream-publisher</module>
+        <module>kafka-stream-consumer</module>
     </modules>
 
 </project>

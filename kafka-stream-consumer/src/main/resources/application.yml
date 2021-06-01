@@ -1,0 +1,11 @@
+server:
+  port: 9101
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: consumer
+      bindings:
+        consumer-in-0:
+          destination: hello-stream
