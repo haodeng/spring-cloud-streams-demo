@@ -5,7 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;
-import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -16,7 +15,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class SpringCloudStreamPublisherApplication {
 
     @Autowired
-    private Source source;;
+    private Source source;
 
     private static int messageDemoId = 1;
 
